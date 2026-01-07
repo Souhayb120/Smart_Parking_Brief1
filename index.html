@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+
+<body class="bg-slate-100 bg-cover bg-no-repeat">
+
+<nav class="text-center bg-blue-300 text-2xl p-2 text-blue-800  tracking-wider">
+    <h1>Smart Parking</h1>
+</nav>
+ <main class="mr-6 ml-6 ">
+    <div class="flex justify-center items-center flex-col">
+ <div class="dash-cards flex  flex-col lg:flex-row pt-3 gap-3 lg:justify-between">
+    <div class="bg-[#e3ecf899] flex h-40 w-70 p-3 rounded-md shadow-md justify-between">
+        <div >
+<h1 class="text-2xl">Total Places</h1>
+        <p class="text-lg">50</p>
+        </div>
+        
+        <img src="assests/parking_svgrepo.com.png" class="w-15 h-25" alt="">
+    </div>
+    <div  class="bg-[#9cc94351] flex justify-between h-40 w-70 p-3 rounded-md shadow-md text-[#6e9a17]">
+        <div>
+ <h1 class="text-2xl">Availble</h1>
+        <p class="text-lg">30</p>
+        </div>
+       
+        <img src="assests/correct.png" class="w-15 h-20" alt="">
+    </div>
+    <div  class="bg-[#e74d3c45] text-[#E74C3C] h-40 w-70 p-3 flex justify-between rounded-md shadow-md ">
+        <div>
+ <h1 class="text-2xl">Occupied</h1>
+        <p class="text-lg">20</p>
+        </div>
+         <img src="assests/occupied.png" class="w-15 h-20" alt="">
+       
+    </div>
+   
+
+  </div>
+   <div class="but p-2 flex  justify-end">
+    <div class="bg-[#4ad23e] text-gray-50 rounded-sm p-2">
+  <i class="fa-solid fa-plus"></i>
+        <button id="add">Add Vihecle</button>
+    </div>
+
+      <div class="modal w-50%" id="modal" >
+         <span class="close">&times;</span>
+ <div class="modal-content rounded-sm flex flex-col gap-2">
+    <h1 class="text-2xl text-center">Add New Vihecle</h1>
+    <div class="flex flex-col">
+      <h1>Car matricule :</h1>  
+        <input type="text" class="borderd rounded-sm border-2 p-2 w-60 outline-none focus:border-b  border-blue-200 " placeholder="email">
+    </div>
+    <div>
+          <select class="borderd rounded-sm border-2 p-2 w-60 border-blue-200" name="choice" id="">
+        <option selected disabled value="">--Available Spots--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </div >
+    <div class="flex justify-end">
+      <button class="bg-green-400 p-2 rounded-sm text-white">submit</button>
+
+    </div>
+    </div>
+      </div>
+   
+
+    
+    </div>
+
+    </div>
+ 
+    <div class="cards h-30  flex justify-around  overflow-x-scroll gap-2  bg-gray-200">
+<div class="card p-2 w-30 bg-yellow-200 p-4">
+<h1>zone 1</h1>
+<p>car b</p>
+</div>
+<div class="card p-2 w-30 bg-yellow-200 p-4">
+<h1>zone 1</h1>
+<p>car b</p>
+</div>
+
+<div class="card p-2 w-30 bg-yellow-200 p-4">
+<h1>zone 1</h1>
+<p>car b</p>
+</div><div class="card p-2 w-30 bg-yellow-200 p-4">
+<h1>zone 1</h1>
+<p>car b</p>
+</div>
+<div class="card p-2 w-30 bg-yellow-200 p-4">
+<h1>zone 1</h1>
+<p>car b</p>
+</div>
+<div class="card p-2 w-30 bg-yellow-200 p-4">
+<h1>zone 1</h1>
+<p>car b</p>
+</div>
+
+
+
+
+  
+  
+</div>
+
+
+ </main>
+   
+
+
+
+    <script src="tailwind.config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
